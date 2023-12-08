@@ -14,7 +14,7 @@ function App() {
 
   useEffect(()=>{
     dispatch(getCartItems())
-  },[])
+  },[dispatch])
   if (isLoading){
     return <div className="loading">
       <h1>Loading ....</h1>
